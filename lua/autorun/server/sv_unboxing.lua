@@ -31,7 +31,7 @@ net.Receive("GiftCrate" , function(len , ply)
 		if IsValid(target) then
 			
 			target:AddCrates(1)
-			target:SendHint( "You received a crate from "..ply:Nick() , 3)
+			target:ChatPrint( "You received a crate from "..ply:Nick())
 
 			for k , v in pairs(player.GetAll()) do
 
