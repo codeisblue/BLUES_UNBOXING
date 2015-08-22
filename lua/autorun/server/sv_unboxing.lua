@@ -57,7 +57,7 @@ net.Receive("GiftKey" , function(len , ply)
 		if IsValid(target) then
 			
 			target:AddKeys(1)
-			target:SendHint( "You received a key from "..ply:Nick() , 3)
+			target:ChatPrint( "You received a key from "..ply:Nick())
 
 			for k , v in pairs(player.GetAll()) do
 
